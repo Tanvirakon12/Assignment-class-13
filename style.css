@@ -1,0 +1,135 @@
+*{
+    font-family: 'Aclonica';
+}
+
+body{
+    /* font-size: 30px; */
+}
+ /* header and nav st  */
+.sakib-mash{
+    height:50vh;
+}
+.mash-m-r{
+  margin: auto auto;
+  border-radius: 0;
+}
+.carousel-item{
+  background: linear-gradient(135deg, orange 60%, cyan);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color:#1877f2;
+  /* overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; */
+}
+nav{
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 0 5px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:#00459e;
+  border-radius: 10px;
+}
+
+.active {
+    background-color: #00459e;
+    border-radius: 10px;
+}
+ /* header and nav end  */
+section{
+    margin: 100px 0;
+
+}
+ /* 1st,2nd section st  */
+.ani-h-w{
+    width: 22.8%;
+    height: 305px;
+    border: 5px solid rgb(184, 25, 25);
+    border-radius: 50px;
+    box-shadow: 20px 20px 50px 20px gray ;
+    margin: auto auto;
+}
+.animation-1 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name:one;
+    animation-duration: 30s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate-reverse; 
+}
+
+@keyframes one {
+    0%   {left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+}
+
+.animation-2{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 20px solid black;
+    border-top: 20px solid red;
+    border-bottom: 20px solid yellow;
+    border-left: 20px solid #1877f2;
+    animation: spinAnimate 0.5s ease-in 0s infinite normal;
+}
+@keyframes spinAnimate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.animation-3{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50px;
+    position: relative;
+    animation-name:three;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;  
+}
+
+@keyframes three {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+   /* 1st,2nd section end  */
+
+
+   /* 3rd section end  */
+#icon-fw{
+    width: 80%;
+    margin: 0 auto;
+}
+#icon-fw  a i{
+    font-size: 50px;
+}
+   /* 3rd section end  */
